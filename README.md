@@ -60,7 +60,7 @@ If you haven't already, you can install all the necessary Python dependencies:
 
 After configuring the config.ini file, run the tool by passing in the target email address:
 ```bash
-python3 emailcracker.py
+python3 cracker.py
 ```
 
 ## Monitor the Cracking Process
