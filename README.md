@@ -1,9 +1,10 @@
 ![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg) 
 
-
-![EvilFeonix Basic v1.0](https://github.com/evilfeonix/EvilFeonix-Basic/blob/main/basic_setup.png)
-
 # EmailCracker
+
+![EvilFeonix Basic v1.0](https://github.com/evilfeonix/EmailCracker/blob/main/banner.png)
+
+
 
 # EmailCracker (Educational Use Only)
 
