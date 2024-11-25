@@ -1,16 +1,19 @@
 ![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg) 
 
-# EmailCracker
 
 ![EvilFeonix Basic v1.0](https://github.com/evilfeonix/EmailCracker/blob/main/banner.png)
 
-
+# EmailCracker
 
 # EmailCracker (Educational Use Only)
 
-**EmailCracker** is a security testing tool designed for educational purposes. It demonstrates how attackers might attempt to crack email passwords through ethical and responsible penetration testing. The tool is designed for users to test the security of their own accounts or those they have explicit permission to test. 
+**EmailCracker** is a Python-based project that simulate a password guessing (brute force or dictionary) attack based on email services. **EmailCracker** aimed to generates a list of password (**wordlist**) based on the victim's informatiom provided and attempt to crack the victim's email passwords. Those password that this tool generate are 4 in minimum and 18 in maximum (length). The tool is designed for users to test the security of their own accounts or those they have explicit permission to test. 
+
 
 > **Important: This tool should **only** be used on accounts that you own or have explicit written consent to test. Unauthorized use of this tool on accounts you do not own or have permission to test is illegal and unethical.**
+
+
+> **Note that the creators of this tool are not responsible for any misuse or damage caused by its usage.**
 
 ## Disclaimer
 
@@ -53,26 +56,30 @@ port = 587
 
 If you're testing with a different provider, replace the host and port with the appropriate values.
 
-## Install Dependencies
+<!-- ## Install Dependencies
 
-If you haven't already, you can install all the necessary Python dependencies:
+If you haven't already, you can install all the necessary Python dependencies: -->
 
 ## Run the Tool
 
-After configuring the config.ini file, run the tool by passing in the target email address:
+After configuring the config.ini file, run the tool:  <!-- by passing in the target email address: -->
 ```bash
 python3 cracker.py
 ```
 
 ## Monitor the Cracking Process
 
+![EvilFeonix Basic v1.0](https://github.com/evilfeonix/EmailCracker/blob/main/info.png)
+![EvilFeonix Basic v1.0](https://github.com/evilfeonix/EmailCracker/blob/main/server.png)
+![EvilFeonix Basic v1.0](https://github.com/evilfeonix/EmailCracker/blob/main/pass.png)
+
 The tool will log its attempts to find the correct password, simulating a password guessing attack (brute force or dictionary). If the password is found, it will be displayed in the output.
 
+![EvilFeonix Basic v1.0](https://github.com/evilfeonix/EmailCracker/blob/main/granted.png)
 
 ### Legal Disclaimer
 > By using this tool, you agree that you will not attempt to access email accounts without permission. Any unauthorized use of this tool is illegal and may result in criminal charges.
 
-The creators of this tool are not responsible for any misuse or damage caused by its usage.
 
 ### License
 
