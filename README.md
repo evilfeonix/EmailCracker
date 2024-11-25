@@ -3,9 +3,8 @@
 
 ![EvilFeonix Basic v1.0](https://github.com/evilfeonix/EmailCracker/blob/main/banner.png)
 
-# EmailCracker
 
-# EmailCracker (Educational Use Only)
+# EmailCracker 
 
 **EmailCracker** is a Python-based project that simulate a password guessing (brute force or dictionary) attack based on email services. **EmailCracker** aimed to generates a list of password (**wordlist**) based on the victim's informatiom provided and attempt to crack the victim's email passwords. Those password that this tool generate are 4 in minimum and 18 in maximum (length). The tool is designed for users to test the security of their own accounts or those they have explicit permission to test. 
 
